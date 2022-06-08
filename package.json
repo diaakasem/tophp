@@ -1,0 +1,19 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prettier/plugin-php": "^0.18.7",
+    "csv-parse": "^5.1.0",
+    "fast-csv": "^4.3.6",
+    "lodash": "^4.17.21",
+    "prettier": "^2.6.2"
+  }
+}
