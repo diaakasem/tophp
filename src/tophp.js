@@ -17,7 +17,7 @@ let filePath = null;
  * prints usage
  */
 function printUsage() {
-    console.log(`
+	console.log(`
 Usage: tophp [options] <file>
 Options:
     -h, --help  - show help
@@ -26,9 +26,8 @@ Options:
     `);
 }
 
-
 if (argv.help || argv.h) {
-    printUsage();
+	printUsage();
 	process.exit(0);
 }
 
@@ -40,7 +39,7 @@ if (argv.csv || argv.c) {
 	filePath = argv.json || argv.j;
 	fileFormat = 'json';
 } else {
-    printUsage();
+	printUsage();
 	process.exit(1);
 }
 
