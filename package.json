@@ -1,17 +1,19 @@
 {
 	"bin": {
-		"tophp": "./tophp.js"
+		"tophp": "./src/tophp.js"
 	},
 	"name": "tophp",
-	"version": "1.1.1",
+	"version": "1.2",
 	"description": "Converts CSV or JSON file to PHP array",
 	"main": "test.js",
 	"scripts": {
+        "prettier": "prettier --write '**/*.js'",
 		"start": "node tophp.js",
-		"test-csv": "./tophp.js --csv=./sample.csv",
-		"test-json": "./tophp.js --json=./sample.json",
+		"test-csv": "./src/tophp.js --csv=./sample.csv",
+		"test-json": "./src/tophp.js --json=./sample.json",
 		"test": "jest",
-		"patch": "npm version patch"
+		"patch": "npm version patch",
+		"prepare": "husky install"
 	},
 	"keywords": [
 		"csv",
@@ -37,6 +39,7 @@
 	},
 	"devDependencies": {
 		"git-hooks": "^1.1.10",
+		"husky": "^8.0.0",
 		"jest": "^28.1.1",
 		"jest-cli": "^28.1.1",
 		"pretty-format": "^28.1.1"
@@ -54,9 +57,5 @@
 		"arrowParens": "always",
 		"bracketSpacing": true,
 		"endOfLine": "lf"
-	},
-	"gitHooks": {
-		"pre-commit": "npm run prettier",
-		"post-commit": "npm version patch"
 	}
 }
