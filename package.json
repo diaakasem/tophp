@@ -36,6 +36,7 @@
 		"yargs": "^17.5.1"
 	},
 	"devDependencies": {
+		"git-hooks": "^1.1.10",
 		"jest": "^28.1.1",
 		"jest-cli": "^28.1.1",
 		"pretty-format": "^28.1.1"
