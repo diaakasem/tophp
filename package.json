@@ -55,6 +55,7 @@
 		"endOfLine": "lf"
 	},
 	"gitHooks": {
-		"pre-commit": "npm run prettier"
+		"pre-commit": "npm run prettier",
+		"post-commit": "npm version patch"
 	}
 }
