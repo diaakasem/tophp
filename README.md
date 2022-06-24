@@ -153,7 +153,7 @@ Output: ( In stdout/console )
 ```
 TODO
 ==========
-- [ ] Add support for JSON
+- [x] Add support for JSON
 - [ ] Add support for XML
 - [x] Add support for CSV
 - [ ] Add support for config files to modify the app behavior
