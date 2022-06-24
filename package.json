@@ -1,19 +1,60 @@
 {
-  "name": "data",
-  "version": "1.0.0",
-  "description": "",
-  "main": "test.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@prettier/plugin-php": "^0.18.7",
-    "csv-parse": "^5.1.0",
-    "fast-csv": "^4.3.6",
-    "lodash": "^4.17.21",
-    "prettier": "^2.6.2"
-  }
+	"bin": {
+		"tophp": "./tophp.js"
+	},
+	"name": "tophp",
+	"version": "1.1.0",
+	"description": "Converts CSV or JSON file to PHP array",
+	"main": "test.js",
+	"scripts": {
+		"start": "node tophp.js",
+		"test-csv": "./tophp.js --csv=./sample.csv",
+		"test-json": "./tophp.js --json=./sample.json",
+		"test": "jest",
+		"patch": "npm version patch"
+	},
+	"keywords": [
+		"csv",
+		"json",
+		"array",
+		"php"
+	],
+	"contributors": [
+		{
+			"name": "Diaa Kasem",
+			"email": "me@diaa.me",
+			"url": "https://diaa.me"
+		}
+	],
+	"license": "ISC",
+	"dependencies": {
+		"@prettier/plugin-php": "^0.18.8",
+		"csv-parse": "^5.2.0",
+		"fast-csv": "^4.3.6",
+		"lodash": "^4.17.21",
+		"prettier": "^2.7.1",
+		"yargs": "^17.5.1"
+	},
+	"devDependencies": {
+		"jest": "^28.1.1",
+		"jest-cli": "^28.1.1",
+		"pretty-format": "^28.1.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"prettier": {
+		"trailingComma": "es5",
+		"singleQuote": true,
+		"printWidth": 120,
+		"tabWidth": 4,
+		"useTabs": true,
+		"semi": true,
+		"arrowParens": "always",
+		"bracketSpacing": true,
+		"endOfLine": "lf"
+	},
+	"gitHooks": {
+		"pre-commit": "npm run prettier"
+	}
 }

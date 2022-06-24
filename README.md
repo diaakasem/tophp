@@ -3,17 +3,24 @@ Description
 
 This is a small utility that converts CSV data in a file into a Php Associative Array.
 
+Installation
+============
+
+`npm i -g tophp`
 
 Usage
 =====
 
-`node tophp.js <csv-file>`
+`tophp [-c <csv-file> | --csv=<csv-file>] [-j <json-file> | --json=<json-file>]`
 
 Example
 =======
 
-`node tophp.js data.csv`
+#### CSV conversion to PHP Array
+`node tophp.js --csv data.csv`
 
+#### JSON conversion to PHP Array
+`node tophp.js --json data.json`
 
 Input: (data.csv file content)
 -------------------------------
@@ -143,9 +150,21 @@ Output: ( In stdout/console )
 		"State" => "NC",
 	],
 ];
-
-
 ```
+TODO
+==========
+- [ ] Add support for JSON
+- [ ] Add support for XML
+- [x] Add support for CSV
+- [ ] Add support for config files to modify the app behavior
+- [ ] Enable key deletion
+- [ ] Enable value replacement for certain keys
+- [ ] Enable key text replacement for certain keys
+- [ ] Enable object dropping based on a filter
+- [ ] Create man pages
+- [ ] Create unit tests
+- [ ] Create Github actions to build the project
+- [ ] Add contribution section
 
 Maintainer
 ==========
