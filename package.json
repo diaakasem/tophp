@@ -3,11 +3,11 @@
 		"tophp": "./src/tophp.js"
 	},
 	"name": "tophp",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "Converts CSV or JSON file to PHP array",
 	"main": "test.js",
 	"scripts": {
-        "prettier": "prettier --write '**/*.js'",
+		"prettier": "prettier --write '**/*.js'",
 		"start": "node tophp.js",
 		"test-csv": "./src/tophp.js --csv=./sample.csv",
 		"test-json": "./src/tophp.js --json=./sample.json",
