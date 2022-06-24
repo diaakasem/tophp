@@ -3,7 +3,7 @@
 		"tophp": "./tophp.js"
 	},
 	"name": "tophp",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Converts CSV or JSON file to PHP array",
 	"main": "test.js",
 	"scripts": {
